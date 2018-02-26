@@ -1,0 +1,142 @@
+/*create by Isao64
+(by Matteo)*/
+
+.A:hover,
+.A:focus {
+  box-shadow: inset 0 0 0 2em var(--hover);
+}
+
+.B:hover,
+.B:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+.C:hover,
+.C:focus {
+  box-shadow: inset -3.5em 0 0 0 var(--hover), inset 3.7em 0 0 0 var(--hover);
+}
+
+.D:hover,
+.D:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+}
+
+.E:hover,
+.E:focus {
+  box-shadow: inset 0 -3.5em 0 0 var(--hover);
+}
+
+.F:hover,
+.F:focus {
+  box-shadow: inset 8em 0 0 0 var(--hover);
+}
+
+.G:hover,
+.G:focus {
+  box-shadow: inset -8.1em 0 0 0 var(--hover);
+}
+
+.offset {
+  box-shadow: 0.3em 0.3em 0 0 var(--color), inset 0.3em 0.3em 0 0 var(--color);
+}
+.offset:hover, .offset:focus {
+  box-shadow: 0 0 0 0 var(--hover), inset 6em 3.5em 0 0 var(--hover);
+}
+
+.H:hover,
+.H:focus {
+  box-shadow: inset 0 3.5em 0 0 var(--hover);
+}
+
+.A {
+  --color: #a972cb;
+  --hover: #cb72aa;
+}
+
+.B {
+  --color: #ef6eae;
+  --hover: #ef8f6e;
+}
+
+.C {
+  --color: #ff7f82;
+  --hover: #ffdc7f;
+}
+
+.D {
+  --color: #ffa260;
+  --hover: #e5ff60;
+}
+
+.E {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+.F {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.G {
+  --color: #8fc866;
+  --hover: #66c887;
+}
+
+.offset {
+  --color: #19bc8b;
+  --hover: #1973bc;
+}
+
+.H {
+  --color: #e4cb58;
+  --hover: #94e458;
+}
+
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+body {
+  color: #fff;
+  background: #17181c;
+  font: 300 1em 'Fira Sans', sans-serif;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+code {
+  color: #e4cb58;
+  font: inherit;
+}
